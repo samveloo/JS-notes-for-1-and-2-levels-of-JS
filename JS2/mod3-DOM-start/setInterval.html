@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="result"></div>
+
+    <script>
+        (function (min){
+            let stopTimer = new Date(new Date().getTime() + min * 60 * 1000)
+            
+            const timer = setInterval(() => {
+                if (new Date() >= stopTimer) clearInterval(timer)
+                result.innerHTML = new Date().toLocaleTimeString();
+            }, 1000);
+        })(1)
+    </script>
+</body>
+
+</html>

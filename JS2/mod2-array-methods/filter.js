@@ -1,0 +1,1 @@
+console.log(data.filter((item) => item?.first_name?.length === 6));

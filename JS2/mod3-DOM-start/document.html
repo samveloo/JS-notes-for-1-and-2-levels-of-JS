@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label>Тело кредита <input type="text" id="S" value="2000000"><br></label>
+        <label>Проценты <input type="text" id="p" value="9.5"> % <br></label>
+        <label>Проценты <input type="text" id="n" value="5"> лет<br></label>
+        <input type="button" value="Найти" onclick="mortgage()">
+        <hr>
+        <pre>Результат: <strong id="result">0</strong></pre>
+    </form>
+
+    <script>
+        function mortgage(){
+            /* console.log(S.type);
+            console.log(S.value, typeof S.value0);
+            S.value = 10_000_000
+            console.log(S.placeholder);
+
+            result.innerHTML = 12; */
+
+            S = parseInt(S.value);
+            p = parseFloat(p.value);
+            n = parseInt(n.value);
+
+            const A = S * ((p / 12 / 100) * Math.pow(1 + (p / 12 / 100), n * 12)) / (Math.pow(1 + (p / 12 / 100), n * 12) - 1);
+
+            result.innerHTML = A.toFixed(2);
+        }
+    </script>
+</body>
+
+</html>

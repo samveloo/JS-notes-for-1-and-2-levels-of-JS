@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fn(this)">Кнопка 1</button>
+    <button onclick="fn(this)">Кнопка 2</button>
+    <hr>
+    <button>Кнопка 3</button>
+    <button>Кнопка 4</button>
+
+    <script>
+        function fn(el) {
+            alert(el.innerHTML)
+        }
+
+        const button3 = document.querySelector('button:nth-child(3)');
+        const button4 = document.querySelector('button:nth-child(4)');
+        button3.onclick = () => alert(this.innerHTML);
+        button4.onclick = () => alert(this.innerHTML);
+    </script>
+</body>
+</html>
