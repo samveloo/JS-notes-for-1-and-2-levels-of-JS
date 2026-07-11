@@ -76,10 +76,10 @@ console.log(phone1.show());
 let goods = [];
 goods.push(goods1);
 goods.push(phone1);
-goods.push(new Phone('NoName', 20000, 20))
+goods.push(new Phone('NoName', 20000, 20));
 console.log(goods);
 
-phone1.props = 'iphone|200000|20'
+phone1.props = 'iphone|200000|20';
 
 console.log(phone1);
 
