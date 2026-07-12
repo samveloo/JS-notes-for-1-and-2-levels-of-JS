@@ -85,7 +85,7 @@ console.log(5 > 0); //true
 console.log(5 < 0); //false
 console.log(5 >= 0); //true
 console.log(5 <= 0); //false
-console.log(5 != 0); //true
+console.log(5 != 0); //true 
 
 let n = 42;
 if (n > 50) {
