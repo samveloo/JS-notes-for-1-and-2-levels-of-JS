@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
         <h1>Заголовок</h1>
@@ -16,12 +18,45 @@
         <section>
             <h2>Заголовок</h2>
             <p>Текст</p>
-            <p>Текст <strong>тублвыыаы</strong> авыфоаов</p> 
+            <p>Текст <strong>тублвыыаы</strong> авыфоаов</p>
         </section>
     </div>
 
     <script>
+        // const element = document.querySelector('.container');
+        // const element = document.querySelector('h1');
+        // const element = document.querySelector('h2');
+        // const element = document.querySelector('section:nth-child(2) p:last-of-type');
+        // const element = document.querySelector('strong');
+        // element.innerHTML = "<em>I'm a furure Fullstack-developer</em>";
+        const element = document.querySelector('section:nth-of-type(2)');
+        element.innerHTML += "<img src='https://placekittens.com/200/300' alt='image'>"
+        console.log(element);
+        //console.log(element.innerHTML);
+        //console.log(element.innerText);
+        //element.innerHTML = ':)'
+
+
+        // const img = document.images[0];
+        const img = document.querySelector('img');
+        img.style.border = '10px solid #fff';
+        img.style.boxShadow = '0 0 5px #444';
+        img.style.borderRadius = '5px';
+
+        img.onclick = function () {
+            let i = 0, step = 10, tick = 40;
+            let self = this;
+            function a() {
+                if (i < step) {
+                    i++;
+                    self.style.opacity = 1 - i / step;
+                    setTimeout(a, tick);
+                }
+            }
+            a()
+        }
         
     </script>
 </body>
+
 </html>
