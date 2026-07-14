@@ -56,6 +56,7 @@ console.log(!0); // true
 console.log(!""); //true
 console.log(!!0); //false
 console.log(!!""); //false
+
 //логическое ИЛИ
 console.log(false || false); //false
 console.log(false || true); //true
