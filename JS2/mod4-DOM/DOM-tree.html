@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>просто <em>пример</em> текста</p>
+
+    <script>
+        const em = document.querySelector('em');
+
+        console.log(em.previousSibling)
+        console.log(em.nextSibling)
+        console.log(em.firstChild);
+        console.log(em.parentNode);
+        console.log(em.parentNode.childNodes);
+        let p = em.parentNode;
+        let last = p.lastChild;
+        console.log(last);
+
+        console.log(em.previousSibling.nodeType); //3
+        console.log(em.previousSibling.nodeName); //#text
+        console.log(em.previousSibling.nodeValue); //'просто '
+
+        em.innerHTML = 'изучение';
+        em.firstChild.nodeValue = 'изучение'
+    </script>
+</body>
+</html>
