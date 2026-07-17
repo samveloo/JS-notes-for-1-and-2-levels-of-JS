@@ -1,4 +1,6 @@
-function fact(n) {
-    return n > 0 ? n * fact(n - 1) : 1;
+let fib = [0, 1];
+const ppp = 23;
+for (let i = 2; i < ppp; i++) {
+    fib[i] = fib[i - 1] + fib[i - 2];
 }
-console.log(fact(4));
+console.log(fib.slice(0, -1).join(' '));
