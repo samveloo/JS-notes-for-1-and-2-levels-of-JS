@@ -1,12 +1,4 @@
-const getCount = function (str) {
-    let counter = 0;
-    let arr = str.split("");
-    
-    for (let item of arr) {
-        if ((['a', 'e', 'i', 'o', 'u']).includes(item)) {
-            counter += 1;
-        }
-    }
-
-    return counter;
+function fact(n) {
+    return n > 0 ? n * fact(n - 1) : 1;
 }
+console.log(fact(4));
