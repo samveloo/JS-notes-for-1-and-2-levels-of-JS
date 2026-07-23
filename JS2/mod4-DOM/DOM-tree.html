@@ -26,6 +26,11 @@
 
         em.innerHTML = 'изучение';
         em.firstChild.nodeValue = 'изучение';
+
+        console.log(em.hasChildNodes());
+
+        let clone = em.parentNode.cloneNode(true)
+        document.body.appendChild(clone)
     </script>
 </body>
 </html>
