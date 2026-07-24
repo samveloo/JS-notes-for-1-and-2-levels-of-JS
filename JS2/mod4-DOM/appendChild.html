@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="addRow"">
+        <input type="text">
+        <input type="button" value="Добавить" onclick="add(this)">
+    </form>
+
+    <ul id="ul">
+        <li>Lorem.</li>
+        <li>Amet.</li>
+        <li>Ea.</li>
+    </ul>
+
+    <script>
+        function add(){
+            const li = document.querySelector('li:nth-of-type(1)')
+            const input = document.querySelector('input:nth-of-type(1)')
+            let clone = li.cloneNode(false);
+            
+        }
+    </script>
+</body>
+</html>
