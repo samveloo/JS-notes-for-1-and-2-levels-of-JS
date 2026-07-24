@@ -13,7 +13,13 @@
     </ul>
 
     <script>
-        
+        const list = document.querySelector('ul')
+
+        if(list.hasChildNodes()){
+            list.removeChild(list.children[0])
+        } else{
+            console.log('fahhhh');
+        }
     </script>
 </body>
 </html>
