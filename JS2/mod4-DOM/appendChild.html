@@ -23,15 +23,16 @@
             let clone = li.cloneNode(false);
             const text = addRow.elements[0].value;
 
-            try {
+            try {               
                 if(text === '') throw new Error("Empty value");
+                
+                addRow.elements[0].value = '';
 
                 clone.innerHTML = text;
                 ul.append(clone);
             } catch (error) {
                 console.log(error);
             }
-            
         }
     </script>
 </body>
