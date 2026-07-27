@@ -24,12 +24,14 @@
             const text = addRow.elements[0].value;
 
             try {               
-                if(text === '') throw new Error("Empty value");
+                if(!text.trim()) throw new Error("Empty value");
                 
                 addRow.elements[0].value = '';
 
                 clone.innerHTML = text;
                 ul.append(clone);
+
+                addRow.elements[0].focus()
             } catch (error) {
                 console.log(error);
             }
