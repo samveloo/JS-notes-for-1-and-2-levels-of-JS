@@ -26,7 +26,7 @@
             const text = addRow.elements[0].value;
 
 
-            if (!text.trim()) throw new Error("Empty value");
+            if (!text.trim()) return;
 
             addRow.elements[0].value = '';
 
