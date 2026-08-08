@@ -1,22 +1,9 @@
-function domainName(url) {
-    if (url.includes('www.')) {
-        let part1 = url.slice(0, url.indexOf('www.') + 4);
+function solution(number){
+  let total = 0;
+  
+  for(let i = 0; i < number; i++){
+    if(!(i % 3) || !(i % 5)) total += i;
+  }
 
-        let url2 = url.replace(part1, '');
-        let part2 = url2.slice(url2.indexOf('.'));
-
-        return url2.replace(part2, '');
-
-    } else if(url.includes('//')) {
-        let part1 = url.slice(0, url.indexOf('//') + 2);
-
-        let url2 = url.replace(part1, '');
-        let part2 = url2.slice(url2.indexOf('.'));
-
-        return url2.replace(part2, '');
-    } else{
-        let part1 = url.slice(url.indexOf('.'));
-
-        return url.replace(part1, '');
-    }
-} 
+  return total;
+}
