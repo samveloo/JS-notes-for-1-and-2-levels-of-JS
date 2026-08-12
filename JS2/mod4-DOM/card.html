@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            border: 1px solid black;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="add()">Добавить</button>
+
+    <template id="card-template">
+        <div class="card">
+            <h2>Lorem, ipsum.</h2>
+            <img src="https://placekittens.com/220/100" alt="котенок">
+            <p>Lorem, ipsum.</p>
+            <p>Neque, distinctio!</p>
+            <button>Lorem.</button>
+        </div>
+    </template>
+
+    <script>
+        const add = () => {
+            const template = document.querySelector('#card-template');
+            const cloneNode = template.content.cloneNode(true);
+            cloneNode.querySelector('h2').innerHTML = 'Наш заголовок';
+            
+            document.body.append(cloneNode);
+        }
+    </script>
+</body>
+</html>
