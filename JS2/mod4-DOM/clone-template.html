@@ -10,7 +10,7 @@
 
     <template id="form-search">
         <h2>Форма поиска</h2>
-        <form action="https://google.com/search/">
+        <form action="https://google.com/search" class="form-search" target="_blank">
             <input type="text" name="q">
             <input type="submit">
         </form>
@@ -18,7 +18,11 @@
 
     <script>
         function addForm(){
-            
+            if (document.querySelector('.form-search')) return;
+
+            let template = document.querySelector('#form-search');
+            let clone = template.content.cloneNode(true);
+            document.body.append(clone)
         }
     </script>
 </body>
