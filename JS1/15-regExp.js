@@ -17,7 +17,7 @@ console.log(re3.test("milo5@mail.ru"));
 console.log(re3.test("test@test@mail.ru"));
 
 console.log('Ехал Грека'.replace(/ре/gi, 'ле'));
-console.log('Ехал Грека'.replace(/([а-яё]+) ([а-яё]+)/gi, '$2 $1'));
+console.log('Ехал Грека'.replace(/([а-яё]+) ([а-яё]+)/gi, '$2 $1')); 
 
 const re4 = /(\d{4})\.(\d?\d)\.(\d?\d)/;
 console.log("2022.12.23".replace(re8, '$3-$2-$1')); //23-12-2022
