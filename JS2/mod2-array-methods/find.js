@@ -1,4 +1,4 @@
-const arr = ['Ехал', 'Грека', 'через', 'реку']
+const arr = ['Ехал', 'Грека', 'через', 'реку'];
 
 console.log( arr.find( word => word.includes('ре') ) );
 console.log( arr.findIndex( word => word.includes('ре') ) );
@@ -10,9 +10,9 @@ const users = [
   { id: 4, name: "Kate", balance: 30 }
 ];
 
-console.log(users.find(item => item.id === 3))
-console.log(users.find(item => item.balance === 0))
-const user = users.find(item => item.id === 4)
+console.log(users.find(item => item.id === 3));
+console.log(users.find(item => item.balance === 0));
+const user = users.find(item => item.id === 4);
 user.balance += 100;
 
 const tasks = [
