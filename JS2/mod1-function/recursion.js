@@ -10,6 +10,7 @@ function reversePrint(linkedList) {
     if (linkedList.next) {
         reversePrint(linkedList.next)
     }
+    
     console.log(linkedList.value);
 }
 
