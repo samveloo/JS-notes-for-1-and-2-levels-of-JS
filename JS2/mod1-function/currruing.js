@@ -14,5 +14,4 @@ function sum2(a) {
 */
 
 const sum2 = (a) => (b) => (c) => a + b + c
-
 console.log(sum2(3)(5)(9));
