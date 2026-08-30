@@ -6,6 +6,7 @@ console.log(arr.reduce(function (prev, curr) {
 }, 0));
 
 const arr2 = ['Ехал', 'Грека', 'через', 'реку']
+//ЕхалГ каче з ку
 
 console.log(arr2.join('').split('ре').length - 1);
 
