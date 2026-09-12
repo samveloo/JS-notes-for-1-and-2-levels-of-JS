@@ -44,4 +44,4 @@ function detonateBomb(delay) {
         console.log('Бомба обезврежена..')
     }
 }
-//detonateBomb(2000)
+//detonateBomb(5000)
