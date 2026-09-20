@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="like(this)">Мне нравиться <strong>0</strong></button>
+
+    <script>
+        function like(btn) {
+            let count = btn.querySelector('strong');
+            let text = Number(count.textContent);
+
+            count.textContent = text + 1 
+        }
+    </script>
+</body>
+</html>
