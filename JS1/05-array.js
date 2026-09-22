@@ -40,7 +40,7 @@ console.log(arr2);
 console.log(arr2.splice(1, 5, 700, 500));
 console.log(arr2);
 
-let arr3 = ["Настя", "Самвел", "Ольга", "Артур"];
+let arr3 = ["Wanda", "Loki", "Black Widow", "Doctor Steaven Strange"];
 console.log(arr3.sort()); //sort сортирирует все по алфавиту
 console.log(arr3);
 
@@ -54,10 +54,10 @@ console.log(arr4.sort((a, b) => {
 console.log(arr4);
 
 let arr5 = [
-    { name: "Настя", sex: "F" },
-    { name: "Самвел", sex: "M" },
-    { name: "Артур", sex: "M" },
-    { name: "Ольга", sex: "F" },
+    { name: "Wanda", sex: "F" },
+    { name: "Loki", sex: "M" },
+    { name: "Black Widow", sex: "F" },
+    { name: "Doctor Steaven Strange", sex: "M" },
 ];
 arr5.sort((a, b) => {
     if (a.sex === "F") return -1;
