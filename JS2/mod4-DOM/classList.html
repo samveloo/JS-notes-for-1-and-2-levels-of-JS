@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="addClass()">Добавить класс</button>
+
+    <hr>
+
+    <button onclick="removeClass()" class="success">Удалить класс</button>
+
+    <hr>
+
+    <button onclick="changeClass()">Переключить класс</button>
+
+    <script>
+        const $ = (selector) => document.querySelectorAll(selector);
+        let btns = $('button')
+
+        const addClass = () => btns.forEach(el => el.classList.add('success'))
+        const removeClass = () => btns.forEach(el => el.classList.remove('success'))
+        const changeClass = () => btns.forEach(el => el.classList.toggle('success'))
+    </script>
+</body>
+</html>
