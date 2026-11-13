@@ -4,7 +4,7 @@ function countDown(sec){
         --sec;
         if(sec < 0){
             clearInterval(timer)
-            console.log('Люблю тебя!')
+            console.log('Welcome Mr. Robot')
         }
     }, 1000)
 }
@@ -37,7 +37,7 @@ function customInterval(callback, delay, maxRuns){
 
 function detonateBomb(delay) {
     console.log(`Фитиль подожжен, у тебя есть ${delay / 1000} секунд...`);
-    let timer = setTimeout(() => console.log('Пиздец...'), delay)
+    let timer = setTimeout(() => console.log('Это конец...'), delay)
     
     return function(){
         clearTimeout(timer);
