@@ -40,7 +40,7 @@ console.log(arr2);
 console.log(arr2.splice(1, 5, 700, 500));
 console.log(arr2);
 
-let arr3 = ["Wanda", "Loki", "Black Widow", "Doctor Steaven Strange"];
+let arr3 = ["Wanda", "Loki", "Black Widow", "Doctor Strange"];
 console.log(arr3.sort()); //sort сортирирует все по алфавиту
 console.log(arr3);
 
