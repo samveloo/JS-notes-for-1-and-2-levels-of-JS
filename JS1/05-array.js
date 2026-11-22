@@ -57,7 +57,7 @@ let arr5 = [
     { name: "Wanda", sex: "F" },
     { name: "Loki", sex: "M" },
     { name: "Black Widow", sex: "F" },
-    { name: "Doctor Steaven Strange", sex: "M" },
+    { name: "Doctor Strange", sex: "M" },
 ];
 arr5.sort((a, b) => {
     if (a.sex === "F") return -1;
